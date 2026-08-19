@@ -8,14 +8,12 @@ interface CardProps {
 export default function Card({ link, title }: CardProps) {
 
     return (
-        <div className={styles.card}>
-            <ul className={styles.cardList}>
+            <ul>
                 <li className={styles.cardItem}>
                     <a className={styles.cardLink} href={link} target="_blank">
                         {title}
                     </a>
                 </li>
             </ul>
-        </div>
     )
 }

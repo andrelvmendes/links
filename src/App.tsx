@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="container">
       <Profile />
-      <Card link="https://example.com" title="Linkedin" />
-      <Card link="https://example.com" title="Github" />
-      <Card link="https://example.com" title="Portfolio" />
+      <ul>
+        <Card link="https://example.com" title="Linkedin" />
+        <Card link="https://example.com" title="Github" />
+        <Card link="https://example.com" title="Portfolio" />
+      </ul>
     </div>
   )
 }
