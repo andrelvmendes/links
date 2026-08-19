@@ -1,6 +1,7 @@
 import './App.css'
 import Card from './components/Card'
 import Profile from './components/Profile'
+import { SocialLink } from './components/SocialLink'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Card link="https://example.com" title="Github" />
         <Card link="https://example.com" title="Portfolio" />
       </ul>
+        <SocialLink />
     </div>
   )
 }
