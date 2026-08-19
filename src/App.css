@@ -1,16 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
 body * {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #fff;
 }
 
 .container {
     width: 360px;
-    border: 1px solid red;
-    margin: auto;
+    margin: 56px auto 0;
 }
