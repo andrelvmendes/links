@@ -1,21 +1,15 @@
-import { FaGithub, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
 import styles from './styles.module.css'
+import { siteData } from '../../data/data';
 
 export function SocialLink() {
+
   return (
     <div className={styles.socialLinks}>
-      <a href="#" target="_blank">
-        <FaGithub size={30} />
-      </a>
-      <a href="#" target="_blank">
-        <FaInstagram size={30} />
-      </a>
-      <a href="#" target="_blank">
-        <FaYoutube size={30} />
-      </a>
-      <a href="#" target="_blank">
-        <FaLinkedin size={30} />
-      </a>
+      {siteData.social.map((link, index) => (
+        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+          {link.icon}
+        </a>
+      ))}
     </div>
   )
 }

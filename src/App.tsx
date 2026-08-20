@@ -2,16 +2,18 @@ import './App.css'
 import Card from './components/Card'
 import Profile from './components/Profile'
 import { SocialLink } from './components/SocialLink'
+import {siteData } from './data/data'
 
 function App() {
 
   return (
+
     <div className="container">
       <Profile />
       <ul>
-        <Card link="https://example.com" title="Linkedin" />
-        <Card link="https://example.com" title="Github" />
-        <Card link="https://example.com" title="Portfolio" />
+        {siteData.links.map((card) => (
+          <Card key={card.id} link={card.url} title={card.title} />
+        ))}
       </ul>
         <SocialLink />
     </div>
