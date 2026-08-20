@@ -4,13 +4,37 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --font-family: 'Inter', sans-serif;
+    --bg-url: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(255, 255, 255, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/MoonStars.svg);
+    --switch-button-bg: #fff;
+}
+
+.light {
+    --primary-color: var(--secondary-color);
+    --bg-url: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/Sun.svg);
+    --switch-button-bg: #fff;
+}
+
 body {
-    background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
+    font-family: var(--font-family);
+    color: var(--primary-color);
 }
 
 .container {

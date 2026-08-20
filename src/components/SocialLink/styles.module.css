@@ -1,9 +1,8 @@
 .socialLinks {
     display: flex;
-    gap: 16px;
     justify-content: center;
     padding: 24px 0;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .socialLinks a{
@@ -16,5 +15,5 @@
 }
 
 .socialLinks a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--highlight-color);
 }

@@ -1,7 +1,5 @@
 import { FaGithub, FaGlobe, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
-export type LinkCategory = 'portfolio' | 'social' | 'contato'
-
 export type ProfileData = {
   name: string
   username: string
@@ -13,7 +11,7 @@ export type CardLink = {
   id: string
   title: string
   url: string
-  category: LinkCategory
+  category: string
 }
 
 export type SocialItem = {
@@ -36,8 +34,8 @@ export const siteData: SiteData = {
     bio: 'Desenvolvedor Full Stack | Python | FastAPI | Java | Springboot'
   },
   links: [
-    { id: 'portfolio', title: 'Ver meu portfólio', url: 'https://example.com', category: 'portfolio', },
-    { id: 'linkedin', title: 'LinkedIn', url: 'https://example.com', category: 'social' },
+    { id: 'portfolio', title: 'Ver meu portfólio', url: 'https://andre-mendes.vercel.app/', category: 'portfolio', },
+    { id: 'linkedin', title: 'Fale comigo no LinkedIn', url: 'https://example.com', category: 'social' },
     { id: 'teams', title: 'Fale comigo pelo Teams', url: 'https://teams.live.com/l/invite/FAAOy0tMUKkpk8cYw?v=g1', category: 'contato' }
   ],
   social: [
