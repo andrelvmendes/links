@@ -1,7 +1,5 @@
-import { FaCloudShowersHeavy, FaGithub, FaGlobe, FaInstagram, FaLinkedin, FaRocket, FaWeight, FaWeightHanging } from 'react-icons/fa'
-import { FaArrowsLeftRight, FaWeightScale } from 'react-icons/fa6'
-import { GiPowerLightning, GiWeight, GiWeightCrush, GiWeightLiftingDown, GiWeightLiftingUp, GiWeightScale } from 'react-icons/gi'
-import { TbWeight } from 'react-icons/tb'
+import { FaGithub, FaGlobe, FaInstagram, FaLinkedin, FaRocket} from 'react-icons/fa'
+import {GiWeightLiftingUp } from 'react-icons/gi'
 
 export type ProfileData = {
   name: string
@@ -47,6 +45,6 @@ export const siteData: SiteData = {
     { id: 'website', url: 'https://andre-mendes.vercel.app/', icon: <FaGlobe size={30} /> },
     { id: 'rocket', url: 'https://app.rocketseat.com.br/me/andrelvmendes', icon: <FaRocket size={30} /> },
     { id: 'instagram', url: 'https://instagram.com/andrelvmendes', icon: <FaInstagram size={30} /> },
-    { id: 'hevy', url: 'https://hevy.com/user/andrelvmendes', icon: <GiWeightLiftingUp size={30} /> },
+    { id: 'hevy', url: 'https://hevy.com/user/andrelvmendes', icon: <GiWeightLiftingUp size={30} /> }
   ]
 }
